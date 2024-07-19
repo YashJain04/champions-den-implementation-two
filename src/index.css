@@ -1,0 +1,530 @@
+/* import special fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+/* css reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* same across all pages */
+.organization-logo {
+    width: 5%;
+    height: auto;
+    transform: translateY(110%);
+}
+
+.navigation-bar-header {
+    background-color: #000000;
+    margin-top: -5%;
+    padding: 1%;
+}
+
+.navigation-bar-header ul {
+    text-align: right;
+}
+
+.navigation-bar-header li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Roboto Slab';
+    margin-top: 2%;
+}
+
+.navigation-bar-header li a:hover {
+    text-decoration: underline;
+}
+
+.navigation-bar-header li a, .navigation-bar-header li a:active, .navigation-bar-header li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#join-button {
+    background-color: orange;
+    color: black;
+    border-radius: 15%;
+    padding: 15%;
+    border: 2px solid white;
+}
+
+/* index page */
+.homepage {
+    position: fixed;
+}
+
+.landing-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.organization-details {
+    transform: translateY(-240%);
+}
+
+.organization-name {
+    font-family: "Kelly Slab";
+    font-size: 700%;
+    text-align: center;
+}
+
+.slogan {
+    font-family: "Roboto Slab";
+    font-size: 200%;
+    text-align: center;
+    margin-top: -1.5%;
+}
+
+#homepage-join-button-special {
+    font-family: 'Roboto Slab';
+    align-items: center;
+    justify-content: center;
+    margin-left: 46%;
+    margin-top: 2%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 55px;
+    font-size: larger;
+}
+
+.footer-bar {
+    background-color: #000000;
+    color: white;
+    font-family: 'Roboto Slab';
+    position: sticky;
+    bottom: 0;
+}
+
+.navigation-bar-footer ul {
+    text-align: center;
+}
+
+.navigation-bar-footer li {
+    display: inline;
+    list-style-type: none;
+}
+
+.navigation-bar-footer li a, .navigation-bar-footer li a:hover, .navigation-bar-footer li a:active, .navigation-bar-footer li a:visited {
+    text-decoration: none;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.social-media-icon {
+    padding: 0.5%;
+    width: 3%;
+}
+
+/* train page */
+.train-page {
+    width: 100%;
+}
+
+.toggle-search-menu {
+    width: 4%;
+    margin-left: 94.5%;
+    position: absolute;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    z-index: 1;
+    font-family: 'Kelly Slab';
+    margin-top: -1%;
+    width: 15%;
+    font-size: 90%;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.sidebar-titles {
+    text-align: center;
+    font-family: 'Josefin Slab';
+    display: inline;
+}
+
+.search-filter-underline {
+    background-image: linear-gradient(90deg, #614385, #516395);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.sidebar-toggle-options {
+    display: inline;
+    margin-right: 0%;
+}
+
+.sidebar-toggle-all-options {
+    display: inline;
+}
+
+.faceted-search-options {
+    margin-bottom: 5px;
+}
+
+.faceted-search-label {
+    font-family: 'Roboto Slab';
+}
+
+.faceted-search-checkbox {
+    margin-left: 3%;
+}
+
+.train-page-titles {
+    font-family: 'Kelly Slab';
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1%;
+    padding: 1%;
+    font-weight: 900;
+}
+
+.train-page-titles-special:hover {
+    text-decoration: underline;
+    text-decoration-color: #FF000D;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 700ms ease-in-out;
+}
+
+.cards-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-component:hover {
+    transform: translateY(-15px);
+    border: 2px solid orange;
+}
+
+.card-image {
+    width: 100%;
+    height: 176px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+
+.card-title-underline {
+    background-image: linear-gradient(90deg, #009FC2, #0D0A0B);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.card-body-text {
+    text-align: justify;
+    font-family: 'Antic Slab';
+}
+
+.card-details {
+    font-family: 'Antic Slab';
+    list-style-type: square;
+}
+
+.card-list-element::marker {
+    color: goldenrod;
+}
+
+.second-row-spacing, .third-row-spacing {
+    margin-top: 2.5%;
+}
+
+/* result page */
+.result-page {
+    width: 100%;
+}
+
+.result-page-title {
+    font-family: 'Kelly Slab';
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1%;
+    padding: 1%;
+    font-weight: 900;
+}
+
+.result-page-title-special:hover {
+    text-decoration: underline;
+    text-decoration-color: #FF000D;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 700ms ease-in-out;
+}
+
+.graph-container {
+    width: 100%;
+    overflow: auto;
+    clear: both;
+}
+
+.graph-content {
+    width: 50%;
+    float: left;
+    padding: 2%;
+}
+
+.graph-content-title {
+    text-align: center;
+    font-family: 'Kelly Slab';
+    font-weight: 900;
+}
+
+.results-statistics-moving-underline {
+    background-image: linear-gradient(90deg, #000000, #ffbf00);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: background-size 300ms ease;
+}
+
+.results-statistics-moving-underline:hover {
+    background-size: 100% 3px;
+}
+
+.graph-content-description {
+    text-align: justify;
+    font-family: 'Antic Slab';
+}
+
+.graph-content-details {
+    font-family: 'Antic Slab';
+    list-style-type: square;
+}
+
+.graph-content-details-element::marker {
+    color: red;
+}
+
+.graph-image {
+    width: 50%;
+    float: right;
+}
+
+#graph-one, #graph-two, #graph-three, #graph-four, #graph-five, #graph-six {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+/* join page */
+.join-page {
+    width: 100%;
+}
+
+.join-page-title {
+    font-family: 'Kelly Slab';
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1%;
+    padding: 1%;
+    font-weight: 900;
+}
+
+.join-page-title-special:hover {
+    text-decoration: underline;
+    text-decoration-color: #FF000D;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 700ms ease-in-out;
+}
+
+#progress-bar {
+    margin: 5%;
+}
+
+.bg-special-progress-colour{
+    background-color: #123445!important;
+    color: white;
+    font-family: 'Roboto Slab';
+  }
+
+.form-side {
+    width: 50%;
+    float: left;
+    padding-left: 2%;
+}
+
+.form-content {
+    font-family: 'Roboto Slab';
+}
+
+.special-dropdowns-multiselect {
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.form-buttons-progress {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Roboto Slab';
+    background-color: orange;
+    color: black;
+    border-radius: 10%;
+    border: 2px solid black;
+}
+
+.form-buttons-progress:hover {
+    border: 2px solid lightcoral;
+}
+
+#booking-confirmed-image {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+#booking-confirmed-header {
+    margin-top: 5%;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+
+.carousel-side {
+    width: 50%;
+    float: right;
+    padding: 2%;
+}
+
+.express-opinion-title {
+    text-align: center;
+    font-family: 'Kelly Slab';
+    font-weight: 900;
+    transform: translateY(-45%);
+}
+
+.express-opinion-title-underline {
+    background-image: linear-gradient(90deg, #000000, #ffbf00);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: background-size 300ms ease;
+}
+
+.express-opinion-title-underline:hover {
+    background-size: 100% 3px;
+}
+
+.carousel {
+    border: 4px solid black;
+}
+
+#carousel-image-specialize {
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+#carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Opaque black with 80% opacity */
+    border-radius: 10px; /* Adjust the value for more or less rounded corners */
+    padding: 10px; /* Optional: adds some padding inside the caption */
+}
+
+.express-opinion-button {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Roboto Slab';
+    background-color: orange;
+    color: black;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-top: 1.5%;
+}
+
+.express-opinion-button:hover {
+    border: 2px solid lightcoral;
+}
+
+.review-input-container {
+    margin-top: 2%;
+    font-family: 'Roboto Slab';
+}
+
+#review-input-button {
+    margin-top: 2%;
+    font-family: 'Roboto Slab';
+}
+
+/* FAQ page */
+.faq-page {
+    width: 100%;
+}
+
+.faq-page-title {
+    font-family: 'Kelly Slab';
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1%;
+    padding: 1%;
+    font-weight: 900;
+}
+
+.faq-page-title-special:hover {
+    text-decoration: underline;
+    text-decoration-color: #FF000D;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 700ms ease-in-out;
+}
+
+.all-questions {
+    padding: 1%;
+    float: left;
+}
+
+.questions-title {
+    font-family: 'Kelly Slab';
+    font-weight: 900;
+}
+
+.questions-title-moving-underline {
+    background-image: linear-gradient(90deg, #000000, #ffbf00);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: background-size 300ms ease;
+}
+
+.questions-title-moving-underline:hover {
+    background-size: 100% 3px;
+}
+
+.questions-answers {
+    font-family: 'Antic Slab';
+    text-align: justify;
+}
+
+.faq-image-details {
+    width: 45%;
+    height: 500px;
+    float: right;
+    border: 2px solid black;
+    margin-right: 2.5%;
+    object-fit: cover;
+}
+
+.faq-image-details:hover {
+    border-color: orange;
+    transform: translateY(-15px);
+}
